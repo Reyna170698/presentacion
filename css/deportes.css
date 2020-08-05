@@ -3,7 +3,7 @@
 
 body{
   text-align: center;
-  background-image: url(img/fondo.jpg);
+  background-image: url(../img/deportes/fondo.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 	font-family: Helvetica;

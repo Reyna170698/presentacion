@@ -149,23 +149,43 @@ button {
 /*Preguntas*/
 
 #bloquePreg {
+    font-family: Arial;
     position: absolute;
     top: 100px;
-    left: 100px;
-    width: 200px;
-    height: 100px;
-    font-size: 10px;
+    left: 420px;
+    width: 500px;
+    height: 160px;
+    opacity: 0.90;
+    font-size: 13px;
     text-align: center;
-    color: whitesmoke;
-    background: darkblue;
-    border: solid 1px black;
+    color: #FEF8E0;
+    background-color: #408DC1;
+    background: linear-gradient(90deg, #408dc1 0%, #436fb0 80%);
     display: none;
     z-index: 4;
+    box-shadow: 6px 7px 10px 1px rgba(0, 0, 0, 0.48);
+    text-shadow: 3px 0px 3px rgba(0, 0, 0, 0.42);
 }
 
 .respuesta {
-    padding: 2px;
-    font-size: 15px;
+    backface-visibility: hidden;
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    white-space: nowrap;
+    background: #fff8f0;
+    border-radius: 100px;
+    border: 0.5px solid rgba(0, 0, 0, 0.2);
+    border-width: 0.5px 0.5px 0.5px 0.5px;
+    padding: 4px 22px 5px 22px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.6), 0px 0px 5px rgba(255, 255, 255, 1), 0px 1px 0px 3px rgba(0, 0, 0, 0.2), inset 0px 1px 0px rgba(255, 255, 255, 1);
+    color: #00477D;
+    font-size: 16px;
+    font-family: Arial;
+    font-weight: 900;
+    font-style: normal;
+    text-shadow: 1px 0px 1px rgba(0, 0, 0, 0.42);
+    background: linear-gradient(96deg, #fff8f0 0%, #fef2dc 10%, #fff5da 20%);
 }
 
 

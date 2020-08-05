@@ -1,25 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/entretenimiento.css">
-  <title>Trivia</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entertainment</title>
+    <link rel="stylesheet" href="css/entretenimiento.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css'>
+
 </head>
 
 <body>
- 
-  <div class="preguntas">
-    <h1 id="preguntas"></h1>
-    <button onClick="validar('a')" id="respuestaA"></button>
-    <button onClick="validar('b')" id="respuestaB"></button>
-    <button onClick="validar('c')" id="respuestaC"></button>
-  </div>
+    <div>
+        <div>
+            <p onclick="jumpscare();"></p>
+            <img id="jumpscare" src="img/Karen.jpg" />
+            <audio id="scream" src="audio/jumpscareAudio.mp3"></audio>
+            <div>
+                <audio id="alert" src="audio/scream.mp3"></audio>
+            </div>
+        </div>
+        <div>
+            <audio id="horror" autoplay loop controls>
+        <source id="horror" src="audio/HorrorAmbience.mp3" type="audio/mpeg">
+        </audio>
+        </div>
+        <div>
+            <img src="img/entretenimiento.png" alt="cat" id="micat">
+            <img src="img/entretenimiento/tv.png" alt="tv" id="tv" class="clicker" onclick="activatePreg()">
+            <img src="img/entretenimiento/joystick.png" alt="joystick" id="joystick" class="clicker" onclick="activatePreg()">
+            <img src="img/entretenimiento/ball.png" alt="ball" id="ball" class="clicker" onclick="activatePreg()">
+            <img src="img/entretenimiento/speaker.png" alt="speaker" id="speaker" class="clicker" onclick="activatePreg()">
+            <img src="img/entretenimiento/coffee.png" alt="coffee" id="coffee" class="clicker" onclick="activatePreg()">
 
-  <div class="cat">
-    <img src="img/entretenimiento.png"  alt="cat">
-  </div>
+        </div>
+        <div id="controls">
+            <button class="nonrompus" id="playpause" title="play" onclick="pause()">
+        <img src="audio/speakeron.png" alt="play" id="speakeron" ></button>
+            <button class="nonrompus" id="pause" title="pause" onclick="pause()">
+         <img src="audio/speakeroff.png" alt="pause" id="speakeroff">
+        </button>
+        </div>
 
-<script type="text/javascript" src="js/entretenimiento.js"></script>
+        <div>
+            <progress id="progressBar" value="3" max="3" style="width:150px; height: 35px;"></progress>
+            <span id="status"></span>
+            <img src="img/healthbar.png" id="healthbar">
+        </div>
+
+        <div id="bloquePreg">
+            <h1 id="preguntas"></h1>
+            <button onClick="validar('a')" id="respuestaA" class="respuesta"></button>
+            <button onClick="validar('b')" id="respuestaB" class="respuesta"></button>
+            <button onClick="validar('c')" id="respuestaC" class="respuesta"></button>
+        </div>
+
+        <div>
+            <img src="img/flecha.png" id="flecha">
+        </div>
+    </div>
+
+    <script src="js/entretenimiento.js"></script>
 </body>
+
 </html>
