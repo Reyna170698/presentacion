@@ -1,0 +1,183 @@
+body {
+    background-image: url("../img/ciencia/1812.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#reycat {
+    position: fixed;
+    bottom: 26%;
+    right: 25%;
+}
+
+#elementos {
+    position: absolute;
+    top: 416px;
+    left: 328px;
+    height: 200px;
+    width: 225px;
+    transition: transform .2s;
+}
+
+#elementos:hover {
+    transform: scale(1.15);
+}
+
+#frasco {
+    position: absolute;
+    top: 371px;
+    right: 470px;
+    height: 190px;
+    width: 220px;
+    transition: transform .2s;
+}
+
+#frasco:hover {
+    transform: scale(1.04);
+}
+
+#frascos2 {
+    position: absolute;
+    top: 9.1%;
+    left: 633px;
+    height: 200px;
+    width: 225px;
+    transition: transform .2s;
+}
+
+#frascos2:hover {
+    transform: scale(1.1);
+}
+
+#microspizarra {
+    position: absolute;
+    top: 115px;
+    right: 135px;
+    height: 183px;
+    width: 213px;
+    transition: transform .2s;
+}
+
+#microspizarra:hover {
+    transform: scale(1.03);
+}
+
+#pizarra {
+    position: absolute;
+    top: 317px;
+    right: 119px;
+    height: 185px;
+    width: 220px;
+    transition: transform .2s;
+}
+
+#pizarra:hover {
+    transform: scale(1.04);
+}
+
+.area {
+    padding: 0;
+    text-align: center;
+}
+
+
+/*Health bar*/
+
+#healthbar {
+    width: 150px;
+    height: 50px;
+    right: 50px;
+    top: 16.5px;
+    position: absolute;
+}
+
+#progressBar {
+    top: 25px;
+    right: 50px;
+    position: absolute;
+}
+
+
+/*Parlante*/
+
+#speakeroff {
+    position: absolute;
+    left: 25px;
+    top: 25px;
+    z-index: 1;
+}
+
+#speakeron {
+    display: none;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    z-index: -1;
+}
+
+
+/*Jumpscares*/
+
+#jumpscare {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    display: none;
+    z-index: 10;
+}
+
+
+/*Preguntas*/
+
+#bloquePreg {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    width: 200px;
+    height: 100px;
+    font-size: 10px;
+    text-align: center;
+    color: whitesmoke;
+    background: darkblue;
+    border: solid 1px black;
+    display: none;
+    z-index: 4;
+}
+
+.respuesta {
+    padding: 2px;
+    font-size: 15px;
+}
+
+
+/*Flecha win*/
+
+#flecha {
+    animation-name: flecha;
+    position: absolute;
+    bottom: 165px;
+    right: 30px;
+    width: 105px;
+    height: 90px;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    transform: scale(1);
+    transition: 1s;
+    display: none;
+}
+
+@keyframes flecha {
+    0% {
+        transform: translate(0px, -20px) scale(0.8);
+    }
+    50% {
+        transform: translate(0);
+    }
+    100% {
+        transform: translate(0px, -20px) scale(0.8);
+    }
+}

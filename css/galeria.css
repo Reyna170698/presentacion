@@ -1,0 +1,117 @@
+body { 
+    background: #BDDBEF;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1 { 
+    color: black;
+    text-align: center;
+    font-family: 'Homemade Apple', cursive;
+    font-size: 80px;
+}
+
+.galeria { 
+    width: 90%;
+    margin: auto;
+    list-style: none;
+    padding: 20px;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.galeria li {
+    margin: 5px;
+}
+
+.galeria img { 
+    width: 150px;
+    height: 150px;
+}
+
+/*estilos de modal*/
+
+.modal { 
+    display: none;
+}
+
+.modal:target { 
+    display: block;
+    position: fixed;
+    background: #f3b9c4cc;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.modal h3 { 
+    color: black;
+    font-size: 80px;
+    text-align: center;
+    margin: 15px 0;
+    font-family: 'Homemade Apple', cursive;
+    background: #EA8597;
+}
+
+.imagen { 
+    width: 100%;
+    height: 45%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen a { 
+    color: #fff;
+    font-size: 40px;
+    text-decoration: none;
+    margin: 0 10px;
+}
+.imagen a:nth-child(2) { 
+    margin: 0;
+    height: 100%;
+    flex-shrink: 2;
+}
+
+.imagen img { 
+    width: 500px;
+    height: 100%;
+    max-width: 100%;
+    border: 7px solid #fff;
+    box-sizing: border-box;
+}
+
+.elegir { 
+    display: block;
+    background: #fff;
+    width: 150px;
+    height: 25px;
+    margin: 15px auto;
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+    color: #000;
+    padding: 25px;
+    border-radius: 10%;
+    line-height: 25px;
+}
+
+.cerrar { 
+    display: block;
+    background: #fff;
+    width: 150px;
+    height: 25px;
+    margin: 15px auto;
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+    color: #000;
+    padding: 25px;
+    border-radius: 10%;
+    line-height: 25px;
+}

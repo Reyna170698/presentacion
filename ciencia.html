@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category is..Catstory</title>
+    <link rel="stylesheet" href="css/ciencia.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css'>
+
+</head>
+
+<body>
+    <div>
+        <div>
+            <p onclick="jumpscare();"></p>
+            <img id="jumpscare" src="img/Karen.jpg" />
+            <audio id="scream" src="audio/jumpscareAudio.mp3"></audio>
+            <div>
+                <audio id="alert" src="audio/scream.mp3"></audio>
+            </div>
+        </div>
+        <div>
+            <audio id="horror" autoplay loop controls>
+        <source id="horror" src="audio/HorrorAmbience.mp3" type="audio/mpeg">
+        </audio>
+        </div>
+        <div>
+            <img src="img/ciencia.png" alt="cat" id="reycat">
+            <img src="img/ciencia/elementos.png" alt="elementos" id="elementos" class="clicker" onclick="activatePreg()">
+            <img src="img/ciencia/frasco.png" alt="frasco" id="frasco" class="clicker" onclick="activatePreg()">
+            <img src="img/ciencia/frascos2.png" alt="frasco2" id="frasco2" class="clicker" onclick="activatePreg()">
+            <img src="img/ciencia/microscopio.png" alt="microscopio" id="microscopio" class="clicker" onclick="activatePreg()">
+            <img src="img/ciencia/pizarra.png" alt="pizarra" id="pizarra" class="clicker" onclick="activatePreg()">
+
+        </div>
+        <div id="controls">
+            <button id="playpause" title="play" onclick="pause()">
+        <img src="audio/speakeron.png" alt="play" id="speakeron" ></button>
+            <button id="pause" title="pause" onclick="pause()">
+         <img src="audio/speakeroff.png" alt="pause" id="speakeroff">
+        </button>
+        </div>
+
+        <div>
+            <progress id="progressBar" value="3" max="3" style="width:150px; height: 35px;"></progress>
+            <span id="status"></span>
+            <img src="img/ciencia/healthbar.png" id="healthbar">
+        </div>
+
+        <div id="bloquePreg">
+            <h1 id="preguntas"></h1>
+            <button onClick="validar('a')" id="respuestaA" class="respuesta"></button>
+            <button onClick="validar('b')" id="respuestaB" class="respuesta"></button>
+            <button onClick="validar('c')" id="respuestaC" class="respuesta"></button>
+        </div>
+
+        <div>
+            <img src="img/flecha.png" id="flecha">
+        </div>
+    </div>
+
+    <script src="js/ciencia.js"></script>
+</body>
+
+</html>

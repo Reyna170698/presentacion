@@ -1,0 +1,20 @@
+body {
+	background-image: url(../img/entretenimiento/entfondo.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	font-family: Helvetica;
+	color: #F6F09C;
+}
+
+.cat{
+	position: absolute;
+	top: 330px;
+	left: 580px;
+}
+
+
+.preguntas{
+	width: 60vw;
+	margin: 100px 250px;
+	text-align: center;
+}
