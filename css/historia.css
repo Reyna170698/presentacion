@@ -170,6 +170,7 @@ button {
 .respuesta {
     backface-visibility: hidden;
     position: relative;
+    width:100%;
     cursor: pointer;
     display: inline-block;
     white-space: nowrap;
