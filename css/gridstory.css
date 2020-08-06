@@ -3,6 +3,27 @@
     padding: 0;
     
 }
+
+body { 
+    background: pink;
+}
+h1 { 
+    text-align: center;
+    margin-top: 5em;
+    font-size: 300%;
+}
+
+.elemento { 
+    display: inline;
+    padding: 3%;
+    font-size: 300%;
+    text-align: center;
+    background: rgb(182, 182, 243);
+    position: absolute;
+    top: 65%;
+    left: 50%;
+}
+/*
 body { 
     background: pink;
     color: rgb(0, 0, 0);
@@ -35,11 +56,11 @@ div>a {
     text-decoration: none;
     color: cornsilk;
     box-shadow: 2px 2px 4px rgb(250, 240, 240);
-}
+}*/
 
 
 /* aca con grid  */
-
+/*
 .contenedor { 
     width: 90%;
     max-width: 1000px;
@@ -48,12 +69,12 @@ div>a {
     grid-gap: 20px;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
-}
+}*/
 
 /* media queris*/
-
+/*
 @media screem and (max-width: 768px) { 
     .contenedor .contenido { 
         grid-column: 1 / -1;
     }
-}
+}*/
