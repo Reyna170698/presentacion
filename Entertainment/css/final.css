@@ -1,0 +1,22 @@
+#final {
+    background-color: black;
+    background-size: cover;
+}
+
+#salida {
+    animation-name: zoom;
+    animation-duration: 10s;
+    transform: scale(0.5);
+    transition: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: step-start;
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(-5)
+    }
+    to {
+        transform: scale(5)
+    }
+}
