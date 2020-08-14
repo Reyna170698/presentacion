@@ -2,10 +2,9 @@ body {
     background-image: url("../img/ciencia/fondook.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    
 }
 
-button {
+.nonrompus {
     color: whitesmoke;
     font-size: 300%;
     border: none;
@@ -49,6 +48,8 @@ button {
 #frasco:hover {
     transform: scale(1.04);
 }
+
+
 /*
 #frascos2 {
     position: absolute;
@@ -63,7 +64,7 @@ button {
     transform: scale(1.1);
 }*/
 
-#microscopio{
+#microscopio {
     position: absolute;
     top: 0.5%;
     right: 0.1%;

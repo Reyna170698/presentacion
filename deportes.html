@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -30,17 +31,17 @@
                 <div class="ring">
                     <img src="img/deportes/cat.png" id="cat" class="clicker" onclick="myFunction()">
                 </div>
-                
+
                 <img src="img/deportes/mirror.png" id="mirror" class="clicker" onclick="activatePreg()">
                 <img src="img/deportes/mat.png" id="mat" class="clicker" onclick="activatePreg()">
                 <img src="img/deportes/ball.png" id="ball" class="clicker" onclick="activatePreg()">
                 <img src="img/deportes/bottle.png" id="bottle" class="clicker" onclick="activatePreg()">
                 <img src="img/deportes/dumbbells.png" id="dumbbells" class="clicker" onclick="activatePreg()">
-            
+
                 <div id="controls">
-                    <button id="playpause" title="play" onclick="pause()">
+                    <button class="nonrompus" id="playpause" title="play" onclick="pause()">
                     <img src="audio/speakeron.png" alt="play" id="speakeron" ></button>
-                    <button id="pause" title="pause" onclick="pause()">
+                    <button class="nonrompus" id="pause" title="pause" onclick="pause()">
                     <img src="audio/speakeroff.png" alt="pause" id="speakeroff"></button>
                 </div>
 
@@ -56,13 +57,15 @@
                     <button onClick="validar('b')" id="respuestaB" class="respuesta"></button>
                     <button onClick="validar('c')" id="respuestaC" class="respuesta"></button>
                 </div>
-        
+
                 <div>
-                    <img src="img/flecha.png" id="flecha">
+                    <a href="transitions/transition.html"><img src="img/flecha.png" id="flecha"></a>
+
                 </div>
             </div>
-        </main>           
+        </main>
     </div>
     <script src="js/deportes.js"></script>
 </body>
+
 </html>

@@ -1,9 +1,10 @@
-body{
+body {
     background-image: url("../img/arte/museum.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
-button {
+
+.nonrompus {
     color: whitesmoke;
     font-size: 300%;
     border: none;
@@ -14,22 +15,23 @@ button {
     border-radius: 32px;
     float: left;
 }
+
+
 /*Animacion del Gato*/
-@keyframes catAzu{
-    0%{
+
+@keyframes catAzu {
+    0% {
         transform: translate(0px, -20px) scale(0.8);
     }
-
-    50%{
+    50% {
         transform: translate(0);
     }
-
-    100%{
+    100% {
         transform: translate(0px, -20px) scale(0.8);
     }
 }
 
-#catAzu{
+#catAzu {
     position: absolute;
     animation-name: catAzu;
     animation-duration: 3s;
@@ -42,8 +44,10 @@ button {
     right: 45%;
 }
 
+
 /*Estilos de objetos*/
-#collar{
+
+#collar {
     position: absolute;
     width: 7vh;
     height: 7vh;
@@ -51,53 +55,59 @@ button {
     top: 310px;
     cursor: pointer;
 }
-#collar:hover{
+
+#collar:hover {
     transform: scale(2);
 }
 
-#cabeza{
+#cabeza {
     position: absolute;
     width: 18vw;
-    right: 24% ;
+    right: 24%;
     top: 55px;
     cursor: pointer;
 }
-#cabeza:hover{
+
+#cabeza:hover {
     transform: scale(1.5);
 }
 
-#cuadro{
+#cuadro {
     position: absolute;
     width: 11vh;
     right: 55.5%;
     top: 360px;
     cursor: pointer;
 }
-#cuadro:hover{
+
+#cuadro:hover {
     transform: scale(1.5);
 }
 
-#jarron{
+#jarron {
     position: absolute;
     width: 12vh;
     right: 87.6%;
     top: 290px;
     cursor: pointer;
 }
-#jarron:hover{
+
+#jarron:hover {
     transform: scale(2);
 }
 
-#pata{
+#pata {
     position: absolute;
     width: 17vh;
     right: 13%;
     top: 205px;
     cursor: pointer;
 }
-#pata:hover{
+
+#pata:hover {
     transform: scale(1.5);
 }
+
 
 /*Health bar*/
 
