@@ -19,49 +19,6 @@ function pause() {
     }
 }
 
-var i = 0;
-var vidas = 3;
-var vivo = true;
-var pBar = document.getElementById("progressBar");
-var preguntasLol = document.getElementById("bloquePreg");
-
-function validar(respuestaElegida) {
-    if (i < 5) {
-
-        if (respuestaElegida == preguntasHistoria[i].respuestacorrecta) {
-            i = i + 1;
-            preguntasLol.style.display = "none"
-            siguientePregunta(i);
-        } else {
-            vidas = vidas - 1;
-            pBar.value = parseInt(pBar.value) - 1;
-            if (vidas == 0) {
-                vivo = false;
-                var jumpScare = document.getElementById("jumpscare");
-                document.getElementById("scream").play();
-                jumpScare.style.display = "block";
-                alert.jumpScare.src;
-                vidas = 3;
-                i = 0;
-                siguientePregunta(i);
-            } else {
-                document.getElementById("alert").play();
-                alert("¡Cuidado! ELLA ESTÁ CERCA");
-
-            }
-        }
-    } else if (vivo = true) {
-        var flecha = document.getElementById("flecha");
-        flecha.style.display = "block"
-    }
-}
-
-
-function activatePreg() {
-
-    preguntasLol.style.display = "block";
-}
-
 const preguntasCiencia = [
     {
         pregunta: "¿Cómo se clasifican los animales con columna vertebral?",
@@ -110,6 +67,54 @@ const preguntasCiencia = [
     },
 
 ]
+
+var i = 0;
+var vidas = 3;
+var vivo = true;
+var pBar = document.getElementById("progressBar");
+var preguntasLol = document.getElementById("bloquePreg");
+
+function activatePreg() {
+
+    preguntasLol.style.display = "block";
+}
+
+function validar(respuestaElegida) {
+    if (i < 5) {
+
+        if (respuestaElegida == preguntasCiencia[i].respuestacorrecta) {
+            i=i+1;
+            preguntasLol.style.display = "none"
+            siguientePregunta(i);
+        } else {
+            vidas = vidas - 1;
+            pBar.value = parseInt(pBar.value) - 1;
+            
+            if (vidas == 0) {
+                vivo = false;
+                var jumpScare = document.getElementById("jumpscare");
+                document.getElementById("scream").play();
+                jumpScare.style.display = "block";
+                alert.jumpScare.src;
+                vidas = 3;
+                i = 0;
+                siguientePregunta(i);
+            } else {
+                document.getElementById("alert").play();
+                alert("¡Cuidado! ELLA ESTÁ CERCA");
+
+            }
+        }
+    } else if (vivo = true) {
+        var flecha = document.getElementById("flecha");
+        flecha.style.display = "block"
+    }
+}
+
+
+
+
+
 
 window.onload = function() {
 
