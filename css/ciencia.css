@@ -1,7 +1,20 @@
 body {
-    background-image: url("../img/ciencia/1812.jpg");
+    background-image: url("../img/ciencia/fondook.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    
+}
+
+button {
+    color: whitesmoke;
+    font-size: 300%;
+    border: none;
+    outline: none;
+    line-height: 30px;
+    -webkit-border-radius: 32px;
+    -moz-border-radius: 32px;
+    border-radius: 32px;
+    float: left;
 }
 
 #reycat {
@@ -9,7 +22,7 @@ body {
     bottom: 26%;
     right: 25%;
 }
-
+/*
 #elementos {
     position: absolute;
     top: 416px;
@@ -78,7 +91,7 @@ body {
 .area {
     padding: 0;
     text-align: center;
-}
+}*/
 
 
 /*Health bar*/
@@ -133,23 +146,32 @@ body {
 /*Preguntas*/
 
 #bloquePreg {
+    text-align: center;
     position: absolute;
     top: 100px;
-    left: 100px;
-    width: 200px;
-    height: 100px;
+    left: 270px;
+    width: 300px;
+    height: 200px;
     font-size: 10px;
     text-align: center;
     color: whitesmoke;
-    background: darkblue;
+    background:blue;
     border: solid 1px black;
+    border-radius: 40px;
     display: none;
     z-index: 4;
 }
 
 .respuesta {
-    padding: 2px;
+    background-color: rgba(29, 103, 146, 0.363);
+    text-align: center;
+    padding: auto;
     font-size: 15px;
+    border: solid 2px;
+    height: 90px;
+    width: 100px;
+    margin: auto;
+    cursor: pointer;
 }
 
 
