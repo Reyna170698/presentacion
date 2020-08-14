@@ -155,8 +155,8 @@ button {
     height: 200px;
     font-size: 10px;
     text-align: center;
-    color: whitesmoke;
-    background:blue;
+    color: black;
+    background: #69E788;
     border: solid 1px black;
     border-radius: 40px;
     display: none;
@@ -164,7 +164,7 @@ button {
 }
 
 .respuesta {
-    background-color: rgba(29, 103, 146, 0.363);
+    background-color: #38B858;
     text-align: center;
     padding: auto;
     font-size: 15px;
