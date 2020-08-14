@@ -86,10 +86,11 @@ function validar(respuestaElegida) {
             i=i+1;
             preguntasLol.style.display = "none"
             siguientePregunta(i);
-        } else {
+        } 
+        else {
             vidas = vidas - 1;
             pBar.value = parseInt(pBar.value) - 1;
-            
+
             if (vidas == 0) {
                 vivo = false;
                 var jumpScare = document.getElementById("jumpscare");
@@ -105,7 +106,8 @@ function validar(respuestaElegida) {
 
             }
         }
-    } else if (vivo = true) {
+    } 
+    else if (vivo = true) {
         var flecha = document.getElementById("flecha");
         flecha.style.display = "block"
     }
@@ -118,15 +120,15 @@ function validar(respuestaElegida) {
 
 window.onload = function() {
 
-    document.getElementById("preguntas").innerHTML = preguntasHistoria[i].pregunta;
-    document.getElementById("respuestaA").innerHTML = preguntasHistoria[i].respuesta.a;
-    document.getElementById("respuestaB").innerHTML = preguntasHistoria[i].respuesta.b;
-    document.getElementById("respuestaC").innerHTML = preguntasHistoria[i].respuesta.c;
+    document.getElementById("preguntas").innerHTML = preguntasCiencia[i].pregunta;
+    document.getElementById("respuestaA").innerHTML = preguntasCiencia[i].respuesta.a;
+    document.getElementById("respuestaB").innerHTML = preguntasCiencia[i].respuesta.b;
+    document.getElementById("respuestaC").innerHTML = preguntasCiencia[i].respuesta.c;
 }
 
 function siguientePregunta(i) {
-    document.getElementById("preguntas").innerHTML = preguntasHistoria[i].pregunta;
-    document.getElementById("respuestaA").innerHTML = preguntasHistoria[i].respuesta.a;
-    document.getElementById("respuestaB").innerHTML = preguntasHistoria[i].respuesta.b;
-    document.getElementById("respuestaC").innerHTML = preguntasHistoria[i].respuesta.c;
+    document.getElementById("preguntas").innerHTML = preguntasCiencia[i].pregunta;
+    document.getElementById("respuestaA").innerHTML = preguntasCiencia[i].respuesta.a;
+    document.getElementById("respuestaB").innerHTML = preguntasCiencia[i].respuesta.b;
+    document.getElementById("respuestaC").innerHTML = preguntasCiencia[i].respuesta.c;
 }
