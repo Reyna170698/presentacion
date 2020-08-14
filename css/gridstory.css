@@ -6,75 +6,66 @@
 
 body { 
     background: pink;
-}
-h1 { 
-    text-align: center;
-    margin-top: 5em;
-    font-size: 300%;
-}
-
-.elemento { 
-    display: inline;
-    padding: 3%;
-    font-size: 300%;
-    text-align: center;
-    background: rgb(182, 182, 243);
-    position: absolute;
-    top: 65%;
-    left: 50%;
-}
-/*
-body { 
-    background: pink;
     color: rgb(0, 0, 0);
     background-repeat: no-repeat;
-    
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-#logo { 
-    width: 100px;
-    height: 450px;
-    position: absolute;
-    left: 22%;
-    top: 25%;
-}
-
-.bt { 
-    text-align: center;
-    position: absolute;
-    top: 70%;
-    background-color: black;
-    right: 25%;
-    opacity: 0.8
-}
-div>a { 
-    display: inline;
-    background-color: rgb(0, 0, 0);
-    margin: 0;
-    padding: 2vw;
-    text-decoration: none;
-    color: cornsilk;
-    box-shadow: 2px 2px 4px rgb(250, 240, 240);
-}*/
-
-
 /* aca con grid  */
-/*
+
 .contenedor { 
     width: 90%;
     max-width: 1000px;
     margin: 20px auto;
     display: grid;
     grid-gap: 20px;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-}*/
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+}
 
-/* media queris*/
-/*
-@media screem and (max-width: 768px) { 
-    .contenedor .contenido { 
-        grid-column: 1 / -1;
-    }
-}*/
+.contenedor > div,
+.contenedor .header 
+.contenedor .contenido 
+.contenedor .footer { 
+    background: powderblue;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.contenedor .header { 
+    background: black;
+    color: white;
+    grid-column-start: 1;
+    grid-column-end: -1;
+    text-align: center;
+    padding: 2%;
+    font-size: 140%;
+}
+
+.contenedor .contenido {
+    font-size: 280%; 
+    grid-column: 1 / -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor .vinculo { 
+    background: #A7D7E3;
+    color: black;
+    height: 50px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-column: 1 / -1;
+    font-size: 290%;
+}
+
+.contenedor .footer { 
+    background: black;
+    color: pink;
+    grid-column: span 3;
+    text-align: center;
+    font-size: 160%;
+}

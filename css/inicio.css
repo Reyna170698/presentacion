@@ -8,11 +8,16 @@ body {
 
 .elemento { 
     display: inline;
-    padding: 3%;
-    font-size: 300%;
+    padding: 1%;
+    font-size: 230%;
     text-align: center;
-    background: rgb(182, 182, 243);
+    background: #E1E6E7;
     position: absolute;
-    top: 5%;
+    top:43%;
     left: 50%;
+    
+}
+#sincolor{ 
+    color: black;
+    
 }
