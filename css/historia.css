@@ -195,10 +195,10 @@ body {
 #flecha {
     animation-name: flecha;
     position: absolute;
-    bottom: 165px;
-    right: 30px;
-    width: 105px;
-    height: 90px;
+    bottom: 600px;
+    right: 80px;
+    width: 200px;
+    height: 150px;
     animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
