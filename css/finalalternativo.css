@@ -1,0 +1,32 @@
+body { 
+    margin: 0;
+    background: pink;
+}
+
+#door { 
+    position: center;
+    top: 20%;
+    right: 300px;
+
+}
+
+#felicidades { 
+    text-align: center;
+    position: absolute;
+    top: 30%;
+    font-size: 100px;
+    left: 40%;
+}
+
+#salida { 
+    text-align: center;
+    position: absolute;
+    top: 45%;
+    font-size: 100px;
+    left: 35%;
+}
+
+#gc { 
+    width: 400px;
+    
+}

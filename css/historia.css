@@ -22,16 +22,16 @@ body {
 
 #camicat {
     position: fixed;
-    bottom: 26%;
-    right: 25%;
+    bottom: 11%;
+    right: 50%;
 }
 
 #libros2 {
     position: absolute;
-    top: 416px;
-    left: 328px;
-    height: 200px;
-    width: 225px;
+    top: 866px;
+    left: 693px;
+    height: 440px;
+    width: 469px;
     transition: transform .2s;
 }
 
@@ -41,10 +41,10 @@ body {
 
 #libros1 {
     position: absolute;
-    top: 371px;
-    right: 470px;
-    height: 190px;
-    width: 220px;
+    top: 780px;
+    right: 1001px;
+    height: 400px;
+    width: 440px;
     transition: transform .2s;
 }
 
@@ -54,10 +54,10 @@ body {
 
 #lampara {
     position: absolute;
-    top: 9.1%;
-    left: 633px;
-    height: 200px;
-    width: 225px;
+    top: 9.3%;
+    left: 1324px;
+    height: 420px;
+    width: 500px;
     transition: transform .2s;
 }
 
@@ -67,10 +67,10 @@ body {
 
 #cuadro {
     position: absolute;
-    top: 115px;
-    right: 135px;
-    height: 183px;
-    width: 213px;
+    top: 242px;
+    right: 285px;
+    height: 385px;
+    width: 450px;
     transition: transform .2s;
 }
 
@@ -80,10 +80,10 @@ body {
 
 #barco {
     position: absolute;
-    top: 317px;
-    right: 119px;
-    height: 185px;
-    width: 220px;
+    top: 660px;
+    right: 248px;
+    height: 400px;
+    width: 460px;
     transition: transform .2s;
 }
 
@@ -151,10 +151,10 @@ body {
 #bloquePreg {
     font-family: Arial;
     position: absolute;
-    top: 100px;
-    left: 420px;
+    top: 250px;
+    left: 1000px;
     width: 500px;
-    height: 160px;
+    height: 180px;
     opacity: 0.90;
     font-size: 13px;
     text-align: center;
@@ -195,10 +195,10 @@ body {
 #flecha {
     animation-name: flecha;
     position: absolute;
-    bottom: 165px;
-    right: 30px;
-    width: 105px;
-    height: 90px;
+    bottom: 600px;
+    right: 80px;
+    width: 200px;
+    height: 150px;
     animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
