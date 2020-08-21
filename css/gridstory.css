@@ -69,3 +69,27 @@ body {
     text-align: center;
     font-size: 160%;
 }
+
+/*.contenedor .correr { 
+    grid-column: 1 / -1;
+    background: none;
+}
+
+@keyframes correr{
+    0%{
+        transform: translateX(-1000px);
+    }
+    50%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(1000px);
+    } 
+}
+
+.correr{
+    animation-name: correr;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+*/
