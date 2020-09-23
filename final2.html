@@ -9,23 +9,31 @@
             background-color:#008eb0;
         }
         .content{
-            width:100%;
-            height:100%;
-            top:50%;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-auto-rows: 300px;
+            grid-template-areas: 
+                ". a a ."
+                ". a a .";
         }
-        h2{
+        .item{
+            grid-area: a;
+            align-self: center;
+            justify-self: center;
+        }
+        h3{
             color: white;
-            justify-items: center;
         }
     </style>
 
 </head>
 
 <body>
-    <div class="content">
-        <img src="img/goodending.png" class="figure-img img-fluid rounded d-flex align-items-center" alt="door">
-        <h3>Felicidades,</h3>
-        <h2 class="text" color="white">¡encontraste la salida!</h2>
+    <div class="content justify-content-center">
+            <div class="item">
+                <h3>Felicidades, <br>¡encontraste la salida!</h2>
+                <img src="img/goodending.png" class="figure-img img-fluid rounded d-flex align-items-center" alt="door">
+        </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
